@@ -77,14 +77,14 @@
 
       <!-- color boll  -->
 
-      <div class=" absolute z-10 top-40 left-4 bg-cyan-400 blur-xl h-16 w-6 md:hidden "></div>
-      <div class=" absolute z-10 top-40 right-4 bg-indigo-500 blur-xl h-16 w-6 md:hidden "></div>
+      <div class=" absolute -z-10 top-40 left-4 bg-cyan-400 blur-xl h-16 w-6 md:hidden "></div>
+      <div class=" absolute -z-10 top-40 right-4 bg-indigo-500 blur-xl h-16 w-6 md:hidden "></div>
       <div class=" absolute -z-10 top-6 left-48 bg-pink-400 blur-xl h-16 w-6 md:hidden "></div>
 
-        <!-- header button -->
+        <!-- header button & icon -->
 
     <div class="header-btn1 mt-5  mx-auto text-center justify-center items-center  sm:mt-10 sm:space-x-2 lg:space-x-4">
-      <button class=" z-50 bg-gradient-to-r from-cyan-500 to-blue-500 px-7 py-2 mb-3 rounded-md 
+      <button class=" transition-all z-50 bg-gradient-to-r from-cyan-500 to-blue-500 px-7 py-2 mb-3 rounded-md 
       text-xl text-white font-semibold transition-all md:shadow md:shadow-2xl md:shadow-teal-500 hover:from-blue-500 hover:to-cyan-500  lg:px-9  ">
         <a href="#">Contact
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-flex">
@@ -103,6 +103,32 @@
       </a>
       </button>
 
+      <!-- social icon  -->
+
+      <div class=" header-icons text-center mt-5 mb-5">
+        <a href="https://www.facebook.com/juwel34">
+          <i
+            class="fa-brands fa-facebook  rounded-md text-[#0f90f2] text-3xl md:text-4xl  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0f90f2] hover:text-white hover:duration-200 cursor-pointer"></i>
+        </a>
+        <a href="https://github.com/juwel26">
+          <i
+            class="fa-brands fa-github rounded-md  text-3xl md:text-4xl  m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-gray-500/50 hover:bg-slate-900 hover:text-white hover:duration-200 cursor-pointer"></i>
+        </a>
+        <a href="#">
+          <i
+            class="fa-brands fa-linkedin rounded-md  text-[#0077b5] text-3xl md:text-4xl   m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0077b5] hover:text-white hover:duration-200 cursor-pointer"></i>
+        </a> 
+        <a id="whbtn" href="#"> 
+          <i 
+            class="fa-brands fa-whatsapp rounded-md  text-[#00bd07] text-3xl md:text-4xl   m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-green-500/50 hover:bg-[#00bd07] hover:text-white hover:duration-200 cursor-pointer"></i>
+        </a> 
+        <a href="#"> 
+          <i 
+            class="fa-brands fa-twitter   rounded-md text-[#1da1f2]  text-3xl md:text-4xl  m-1 bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#1da1f2] hover:text-white hover:duration-200 cursor-pointer"></i>
+        </a>
+
+      </div>
+
     </div>
     </div>
 
@@ -111,11 +137,15 @@
     <div class=" header-img md:grid-cols-2 md:w-4/6 md:h-full relative">
       <img class=" -z-50  justify-items-end justify-end items-end h-full w-auto md:justify-start md:items-start md:mt-32  
       lg:mt-10" src="../img/bohemian-man-thinking_1368-3693.avif" alt="header-imag">
+
+      <img id="whimg" class="absolute h-52 w-32 top-5 left-0 hidden transition-all " src="./img/what'sapp contact.jpg" alt="contactNO">
+     
       <div class=" absolute z-10  sm:block  md:bg-cyan-500 md:rounded-full md:h-10 md:w-10 md:top-[150px] md:left-[90px] md:opacity-100 md:animate-ping
       lg:block lg:bg-cyan-500  lg:rounded-full lg:h-10 lg:w-10 lg:top-[85px] lg:left-[135px] lg:opacity-100 lg:animate-ping "></div>
     </div>
-      <div class=" absolute z-10   bg-cyan-500 rounded-full h-8 w-8
-      top-[22rem] left-[80px] opacity-100 animate-ping md:hidden"></div>
+    
+      <div class=" absolute z-10   sm:bg-cyan-500 sm:rounded-full sm:h-8 sm:w-8
+      sm:top-[30rem] sm:left-[150px]  sm:animate-ping md:hidden"></div>
     </div>
   </div>
 

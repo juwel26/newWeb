@@ -12,3 +12,18 @@ toggle.addEventListener('click', function () {
     menu.style.display = 'block'
   }
 })
+
+// whtasapp btn function 
+
+const whtasapp = document.getElementById('whbtn');
+const whtasappImg = document.getElementById('whimg');
+
+whtasapp.addEventListener('click', function () {
+  if (whtasappImg.style.display == 'block') {
+    whtasappImg.style.display = 'none'
+    
+  }
+  else {
+    whtasappImg.style.display = 'block'
+  }
+})
