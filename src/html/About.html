@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="../img/logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>ABOUT</title>
 </head>
 
-<body>
+<body style="height: 100vh; overflow-x: hidden;">
   <!-- navbar  -->
   <nav class="bg-sky-100">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -45,17 +48,16 @@
         </div>
         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-center">
           <div class="flex flex-shrink-0 items-center">
-            <img class="h-8 w-auto" src="../img/logo.png"
-              alt="Your Company">
+            <img class="h-12 w-auto" src="../img/logo.png" alt="Your Company">
           </div>
           <div class="hidden sm:ml-6 sm:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="#" class=" text-sky-500 hover:bg-sky-200 rounded-md px-3 py-2 text-sm font-medium"
-                aria-current="page">Dashboard</a>
-              <a href="#" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">Team</a>
+              <a href="..." class=" text-sky-500 hover:bg-sky-200 rounded-md px-3 py-2 text-sm font-medium"
+                aria-current="page">Home</a>
+              <a href="#" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">About</a>
               <a href="#" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-              <a href="#" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+              <a href="#" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">Contact</a>
             </div>
           </div>
         </div>
@@ -71,13 +73,213 @@
       <div class="space-y-1 px-4 pb-3 pt-2">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="#" class="text-sky-600 block hover:bg-sky-200 rounded-md px-3 py-2 text-base font-medium"
-          aria-current="page">Dashboard</a>
-        <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Team</a>
+          aria-current="page">Home</a>
+        <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">About</a>
         <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-        <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+        <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Contact</a>
       </div>
     </div>
   </nav>
+
+  <div
+    style="background-image: url('../img/img11.avif'); height: auto; width: auto; background-repeat: no-repeat; background-size: cover;"
+    class="bg-url[('./img/img11.avif')]">
+    <div class=" mx-auto text-center justify-center items-center pt-5  ">
+
+      <div class=" bg-transparent sm:bg-white p-5 rounded-md m-5 w-auto sm:w-3/6 md:w-3/6 text-center mx-auto h-auto ">
+        <img class=" rounded-lg h-40 w-44 mb-5 mx-auto text-center"
+          src="data:image/jpeg;base64,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"
+          alt="">
+        <h1 class=" capitalize font-serif text-lg font-semibold">Md. juwel rana</h1>
+        <p class=" capitalize bg-slate-200 px-1 py-1 rounded-lg mt-2 text-base">ui/ux designer</p>
+
+        <!-- icon  -->
+        <div class="icon mt-2">
+          <a href="https://www.facebook.com/juwel34">
+            <i
+              class="fa-brands fa-facebook  rounded-md text-[#0f90f2] text-2xl md:text-4xl  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0f90f2] hover:text-white hover:duration-200 cursor-pointer"></i>
+          </a>
+          <a href="https://github.com/juwel26">
+            <i
+              class="fa-brands fa-github rounded-md     text-2xl md:text-4xl  m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-gray-500/50 hover:bg-slate-900 hover:text-white hover:duration-200 cursor-pointer"></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands fa-linkedin rounded-md  text-[#0077b5] text-2xl md:text-4xl   m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0077b5] hover:text-white hover:duration-200 cursor-pointer"></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands fa-instagram   rounded-md text-pink-700 text-3xl md:text-4xl  m-1 bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50   hover:duration-200 cursor-pointer"></i>
+          </a>
+
+
+        </div>
+        <div class=" h-auto w-auto bg-slate-200 rounded-lg mt-8 font-serif overflow-x-hidden  ">
+          <div class="contact info  rounded-xl">
+
+            <!-- info of me  -->
+            <div class="info list">
+
+              <div class="ph block">
+
+                <div class="btn relative mx-auto text-center flex">
+                  <button class=" mt-5 ml-5 rounded-xl shadow-2xl">
+                    <i
+                      class="fa-solid fa-mobile-screen mx-auto rounded-xl bg-white py-3 px-4 text-center   text-xl text-pink-600"></i>
+                  </button>
+
+                  <div class=" font-sans  mt-5 ml-10 text-start  ">
+                    <p>Phone</p>
+                    <h1> 01741370613 </h1>
+                  </div>
+
+                </div>
+                <hr class="m-5 bg-gray-600 border-gray-300 text-gray-800">
+              </div>
+
+
+              <div class="email block">
+
+                <div class="btn relative mx-auto text-center flex">
+                  <button class=" mt-5 ml-5 rounded-xl shadow-2xl">
+                    <i
+                      class="fa-solid fa-envelope-open-text  mx-auto rounded-xl bg-white py-3 px-4 text-center   text-xl text-[#40b75a]"></i>
+
+                  </button>
+
+                  <div class=" font-sans  mt-5 ml-10 text-start ">
+                    <p>Email</p>
+                    <h1 class=""> juwelrana3426@gamil.com</h1>
+                  </div>
+
+                </div>
+                <hr class="m-5 bg-gray-600 border-gray-300 text-gray-800">
+              </div>
+
+
+              <div class="location block">
+
+                <div class="btn relative mx-auto text-center flex">
+                  <button class=" mt-5 ml-5 rounded-xl shadow-2xl">
+                    <i
+                      class="fa-sharp fa-solid fa-location-dot fa-beat fa-xs mx-auto rounded-xl bg-white py-3 px-4 text-center   text-xl text-[#e43e3e]"></i>
+
+                  </button>
+
+                  <div class=" font-sans  mt-5 ml-10 text-start ">
+                    <p>Location</p>
+                    <h1> Dhaka, Bangladesh</h1>
+                  </div>
+
+                </div>
+                <hr class="m-5 bg-gray-600 border-gray-300 text-gray-800">
+              </div>
+
+
+              <div class="Birthday block">
+
+                <div class="btn relative mx-auto text-center mb-5 flex">
+                  <button class=" mt-5 ml-5 rounded-xl shadow-2xl">
+                    <i
+                      class="fa-solid fa-cake-candles mx-auto rounded-xl bg-white py-3 px-4 text-center   text-xl text-[#713bf0]"></i>
+
+                  </button>
+
+                  <div class=" font-sans mt-5 ml-10 text-start ">
+                    <p>Birthday</p>
+                    <h1>01/01/1998</h1>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- button cv  -->
+
+        <button class=" z-50 header-btn2 bg-cyan-500 px-3.5 py-2 m-5 rounded-md text-lg text-white
+              hover:bg-[#802b86] transition-all  font-semibold md:text-xl md:shadow md:shadow-2xl md:shadow-teal-500 ">
+          <a href="../Documents/own CV.pdf" Download="Juwel Rana's CV">Download cv
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 inline-flex">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+
+          </a>
+        </button>
+
+
+      </div>
+      <!-- contact div  -->
+
+      <div
+        class="mcontact mb-20 bg-transparent sm:bg-white p-5 rounded-md m-5 w-auto sm:w-3/6 md:w-3/6 text-center mx-auto h-auto ">
+
+        <div class="divhead relative flex">
+          <h1 class="text-2xl font-semibold ml-5"> Contact</h1>
+          <div class="bg-blue-500 h-1 w-12 top-5 left-32 rounded-full fixed  absolute"></div>
+        </div>
+
+
+        <div class="webcontact h-auto w-auto mb-10">
+          <h1 class="text-2xl mt-3 mx-auto text-center"> i'am always open to discussing product</h1>
+          <h1 class="text-3xl font-bold mt-3 mx-auto text-center"> design work or partnerships</h1>
+
+          <div>
+            <label for="name" class="block text-sm text-start font-semibold leading-6 text-gray-900"> Name</label>
+            <div class="mt-2.5">
+              <input type="text" name="name" id="name" autocomplete="family-name"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+
+          <div>
+            <label for="name" class="block text-sm text-start font-semibold leading-6 text-gray-900"> Email</label>
+            <div class="mt-2.5">
+              <input type="text" name="name" id="name" autocomplete="family-name"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+
+          <div class="sm:col-span-2">
+            <label for="message" class="block text-sm text-start font-semibold leading-6 text-gray-900">Message</label>
+            <div class="mt-2.5">
+              <textarea placeholder="Type Your sms" name="message" id="message" rows="4"
+                class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+          </div>
+          <button
+            class=" w-full bg-blue-700 py-2 rounded-md mt-5 text-md hover:bg-blue-600 transition-all text-white font-semibold">
+            <a href=""> submit</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script>
 
@@ -87,7 +289,7 @@
     const xx = document.getElementById('crose');
 
     toggle.addEventListener('click', function () {
-      if (menu.style.display == 'block' ) {
+      if (menu.style.display == 'block') {
         menu.style.display = 'none'
 
       }
