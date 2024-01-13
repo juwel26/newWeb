@@ -40,11 +40,11 @@ async function moveweb() {
   try {
     const response = await fetch("http://universities.hipolabs.com/search?country=United+States")  
     const result = await response.json();
-    // const realdata = result.data
- 
-    console.log(result)
-    // for(let i = 0 ; i <= result.length ; i++ ){
-document.getElementById('test').innerHTML = `${result.map((universities) => {
+    const realdata = result
+   
+    // console.log(realdata)
+
+     document.getElementById('test').innerHTML = `${result.map((universities) => {
      
       return`
       
@@ -57,10 +57,7 @@ document.getElementById('test').innerHTML = `${result.map((universities) => {
      <h5 class=" text-white">  ${universities.domains.map((dom)=>{
       return ` ${dom}`})} </h5>
  <p class=" text-white" > ${universities.alpha_two_code} </p>
-  </div>`    
-       
-    }).join(' ')}`
-  // }
+  </div>` }).join(' ')}`
     }
     
    catch (error) {
