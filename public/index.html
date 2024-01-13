@@ -1,235 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
-   <link rel="icon" type="image/x-icon" href="./img/logo.png">
-   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-  <title>Juwel Rana</title>
-  
- 
-
-</head>
-
-<body style="height: auto; overflow-x: hidden;">
-
-  <!-- navbar  -->
-
-
-  <nav class="bg-blue-50 border-gray-200 dark:bg-gray-900  shadow-2xl shadow-cyan-200">
-    <div class="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-4">
-      <a href="#" class="flex items-center">
-        <img src="./img/logo.png" class="h-12 mr-5" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white mx-auto text-center ">Juwel
-          Rana</span>
-      </a>
-      <button id="three-dought" type="button"
-        class=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-        <!-- <span class="sr-only">Open main menu</span> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-blue-500">
-          <path fill-rule="evenodd"
-            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75H12a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-            clip-rule="evenodd" />
-        </svg>
-      </button>
-      <div id="nav-list" class="transition-all duration-900 hidden w-full md:block md:w-auto   ">
-        <ul
-          class="  sm:transition delay-500  font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="./html/About.html"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-blue-300 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white  md:dark:hover:bg-transparent ">About</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-blue-300 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-blue-300 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Demo</a>
-          </li>
-          <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-blue-300 hover:text-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
     </div>
-  </nav>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-  <!-- header of website -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-  <div class="header h-auto md:flex md:mt-12">
-    <div class="header-text md:grid-cols-6 md:w-4/6 relative  ">
-      <h1 style="font-family: 'Borel', cursive;"
-      data-aos="zoom-out"   class="text-23xl mx-auto mt-16 text-center justify-center items-center content-center sm:text-4xl md:text-4xl lg:text-5xl ">
-        <span class="text-6xl text-rose-600 lg:text-8xl " >welcome</span>
-        <br> to my website
-      </h1>
-
-      <!-- color boll  -->
-
-      <div class=" absolute -z-10 top-40 left-4 bg-cyan-400 blur-xl h-16 w-6 md:hidden "></div>
-      <div class=" absolute -z-10 top-40 right-4 bg-indigo-500 blur-xl h-16 w-6 md:hidden "></div>
-      <div class=" absolute -z-10 top-6 left-48 bg-pink-400 blur-xl h-16 w-6 md:hidden "></div>
-
-      <!-- header button & icon -->
-
-      <div
-        class="header-btn1 mt-5  mx-auto text-center justify-center items-center  sm:mt-10 sm:space-x-2 lg:space-x-4">
-        <button data-aos="flip-left"
-          class=" transition-all z-50 bg-gradient-to-r from-cyan-500 to-blue-500 px-7 py-2 mb-3 rounded-md 
-      text-lg text-white font-semibold transition-all md:shadow md:shadow-2xl md:text-xl md:shadow-teal-500 hover:from-blue-500 hover:to-cyan-500  lg:px-9  ">
-          <a href="#">Contact
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 inline-flex">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-            </svg>
-          </a>
-        </button>
-        <button data-aos="flip-up" class=" z-50 header-btn2 bg-cyan-500 px-3.5 py-2 mx-1 rounded-md text-lg text-white
-       hover:bg-[#802b86] transition-all  font-semibold md:text-xl md:shadow md:shadow-2xl md:shadow-teal-500 ">
-          <a  href="./src/Documents/own CV.pdf" Download="Juwel Rana's CV">Download cv
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="w-6 h-6 inline-flex">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-            </svg>
-          </a>
-        </button>
-
-        <!-- social icon  -->
-
-        <div class=" header-icons text-center mt-5 mb-5">
-          <a href="https://www.facebook.com/juwel34">
-            <i
-              class="fa-brands fa-facebook  rounded-md text-[#0f90f2] text-3xl md:text-4xl  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0f90f2] hover:text-white hover:duration-200 cursor-pointer"></i>
-          </a>
-          <a href="https://github.com/juwel26">
-            <i
-              class="fa-brands fa-github rounded-md     text-3xl md:text-4xl  m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-gray-500/50 hover:bg-slate-900 hover:text-white hover:duration-200 cursor-pointer"></i>
-          </a>
-          <a href="#">
-            <i
-              class="fa-brands fa-linkedin rounded-md  text-[#0077b5] text-3xl md:text-4xl   m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50 hover:bg-[#0077b5] hover:text-white hover:duration-200 cursor-pointer"></i>
-          </a>
-          <a id="whbtn" href="#">
-            <i
-              class="fa-brands fa-whatsapp rounded-md  text-[#00bd07] text-3xl md:text-4xl   m-1  bg-zinc-100  p-2 m-1 border shadow-lg shadow-green-500/50 hover:bg-[#00bd07] hover:text-white hover:duration-200 cursor-pointer"></i>
-          </a>
-          <a href=" https://instagram.com/juwelrana906?igshid=OGQ5ZDc2ODk2ZA== ">
-            <i
-              class="fa-brands fa-instagram   rounded-md text-pink-700 text-3xl md:text-4xl  m-1 bg-zinc-100  p-2 m-1 border shadow-lg shadow-blue-500/50   hover:duration-200 cursor-pointer"></i>
-          </a>
-
-        </div>
-
-      </div>
-    </div>
-
-    <!-- header img  -->
-
-    <div class=" header-img md:grid-cols-2 md:w-4/6 md:h-full relative">
-      <img  data-aos="fade-down"   class=" -z-50  justify-items-end justify-end items-end h-full w-auto md:justify-start md:items-start md:mt-32  
-      lg:mt-10" src="../img/bohemian-man-thinking_1368-3693.avif" alt="header-imag">
-
-      <img id="whimg" class="absolute h-52 w-32 top-5 left-0 hidden transition-all " src="./img/what'sapp contact.jpg"
-        alt="contactNO">
-
-      <!-- <div
-        class=" absolute z-10  sm:block  md:bg-cyan-500 md:rounded-full md:h-10 md:w-10 md:top-[150px] md:left-[90px] md:opacity-100 md:animate-ping
-      lg:block lg:bg-cyan-500  lg:rounded-full lg:h-10 lg:w-10 lg:top-[85px] lg:left-[135px] lg:opacity-100 lg:animate-ping ">
-      </div> -->
-
-      <div class=" absolute z-10  sm:block   md:rounded-full md:h-12 md:w-12 md:top-[150px] md:left-[90px] md:opacity-100 md:animate-bounce
-      lg:block   lg:rounded-full lg:h-16 lg:w-16 lg:top-[85px] lg:left-[135px] lg:opacity-100 lg:animate-bounce ">
-        <img class="hidden md:block" src="./img/coin.png" alt="" srcset="">
-      </div>
-
-
-    </div>
-
-    <div class=" absolute z-10   sm:bg-cyan-500 sm:rounded-full sm:h-8 sm:w-8
-      sm:top-[30rem] sm:left-[150px]  sm:animate-ping md:hidden"></div>
-  </div>
-  </div>
-
-<!-- about me -->
-
-<div class="aboutMe w-full mx-auto flex flex-col md:flex md:flex-row py-2  bg-no-repeat bg-center bg-[url('./img/aboutBGimg.JPG')] bg-cover ">
-
-  <div class="image md:w-2/6 h-auto mx-auto align-middle justify-end  ">
-
-    <img class=" shadow-lg ring-4 ring-black-600 md:ring-[#6cd5d6] md:ring-4 h-40 w-40 mt-5 md:mt-28 rounded-full mx-auto text-right justify-end" data-aos="fade-right"  src="./img/_MG_2659.JPG" alt="img">
-
-  </div>
-  <div class="aboutext mt-5 px-5 md:mt-28 h-auto w-full md:w-4/6 mx-auto text-left flex-wrap justify-start">
-    <h1 class="uppercase underline decoration-indigo-800  decoration-2 font-serif">Developer Juwel Rana</h1>
-    <p class=" h-auto md:pt-2">
-      
-      My Name Is Juwle Rana. I Am A Web Developer And I Have Been Working As
-       A Web Developer For 2 Years If You Need Any Help Please Contact Me Via
-       <button class=" px-2 py-1 font-semibold hover:ring-1 hover:ring-offset-cyan-500 rounded-full text-white bg-indigo-700" data-aos="fade-up"  > Email: juwelrana3426@gmail.com </button>
-    
-       <ul class="list-inside list-disc mt-1">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JAVASCRIPT</li>
-        <li>BOOTSTRAP</li>
-        <li>NODE JS</li>
-        <li>WORDPRESS</li>
-        <li>WORDPRESS ECOMARCE SITE DEVELOPMENT</li>
-        <li>MONGODB, MYSQUAL DATEBASE</li>
-        <li>REACT JS</li>
-        <li>TAILWIND CSS</li>
-      
-      </ul>
-    </p>
-  </div>
-</div>
-
-
-<!-- test -->
-
-<section id="test" class=" overflow-y-scroll">
-
-  <!-- <div class=" p-5 mx-auto align-middle m-10 rounded-lg shadow-xl justify-center h-auto w-3/6 border-r-teal-500 bg-blue-400 ">
-
-    <h1 class="font-serif text-2xl text-zinc-50 font-bold">collage</h1>
-     <h4 class="font-medium text-white">country</h4>
-     <a class="underline cursor-pointer text-lg text-sky-800" href=""> gfdg</a>
-     <h5 class=" text-white"> domain </h5>
-     <p class=" text-white" > alpa </p>
-  </div> -->
-  
-
-</section>
-
-
-
-
-  <footer class="bg-sky-100 text-center h-20 w-auto" > <br>
-    <span class=" mx-auto text-center text-justify items-center text-xl mt-10  text-sky-500 font-sans " >
-      &copy; 2021 -
-      <script>document.write(new Date().getFullYear())</script> Juwel Rana.
-    </span>
-
-
-  </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="./src/js/index.js"></script>
-</body>
-
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
 </html>
