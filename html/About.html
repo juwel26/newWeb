@@ -11,9 +11,19 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../css/style.css">
   <title>ABOUT</title>
+
+  <!-- mail sender -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_LN4DoRR1JLQvmCTNWw6ri");
+    })();
+  </script>
+
 </head>
 
-<body style="height: auto; overflow-x: hidden;">
+<body style="height: auto; overflow-x: hidden;" >
   <!-- navbar  -->
   <nav class="bg-sky-100">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
@@ -229,21 +239,25 @@
           <h1 class="text-2xl mt-3 mx-auto text-center"> i'am always open to discussing product</h1>
           <h1 class="text-3xl font-bold mt-3 mx-auto text-center"> design work or partnerships</h1>
 
-          <div>
+          <div id="cfrom">
+
+            <div>
             <label for="name" class="block text-sm text-start font-semibold leading-6 text-gray-900"> Name</label>
             <div class="mt-2.5">
-              <input type="text" name="name" id="name" autocomplete="family-name"
+              <input type="text" name="name" id="Name" autocomplete="family-name"
                 class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset  ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div>
+
+           <div>
             <label for="name" class="block text-sm text-start font-semibold leading-6 text-gray-900"> Email</label>
             <div class="mt-2.5">
-              <input type="text" name="name" id="name" autocomplete="family-name"
+              <input  type="email" name="name" id="email_id" autocomplete="family-name"
                 class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
             </div>
           </div>
+
 
           <div class="sm:col-span-2">
             <label for="message" class="block text-sm text-start font-semibold leading-6 text-gray-900">Message</label>
@@ -252,10 +266,29 @@
                 class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
             </div>
           </div>
-          <button
+
+          <button id="sbtn" onclick=SendMail()
             class=" w-full bg-blue-700 py-2 rounded-md mt-5 text-md hover:bg-blue-600 transition-all text-white font-semibold">
             <a href=""> submit</a>
           </button>
+
+          <div id="spand">
+            <span id="pp"></span>
+          </div>
+
+
+          </div>
+          
+
+    <div class=" sucss relative -top-10  md:bg-white  h-auto w-1/3 mx-auto" >
+     <a href="" > <i class=" relative cancel  text-red-500 hover:bg-red-300 p-2  top-0 -right-20 fa-solid fa-xmark"></i>
+      <img class=" mx-auto img "  src="../img/Animation - 1705303799955.gif" alt=""> 
+      
+    </a>
+         
+
+          
+          
         </div>
       </div>
     </div>
@@ -263,6 +296,13 @@
 
   </div>
   </div>
+
+
+   
+    </div>
+
+
+  
 
 
   <footer class="bg-sky-100 text-center h-20 w-auto"> <br>
@@ -273,8 +313,7 @@
   </footer>
 
 
-
-
+  <!-- success action  -->
 
 
 
@@ -303,6 +342,8 @@
       }
     })
   </script>
+
+  <script src="../src/js/contact.js"></script>
 </body>
 
 </html>
