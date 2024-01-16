@@ -12,8 +12,10 @@ function SendMail(){
       //  document.getElementById("pp").innerHTML = " Your massage sent successfully Thank you."
       //  document.getElementById("pp").style.color = "green"
        document.querySelector(".sucss").style.display = " block"
-
-       
+       document.getElementById("Name").value = " "
+       document.getElementById("email_id").value = " "
+       document.getElementById("message").value = " "
+        
   
        setTimeout(() => {
         // document.getElementById("pp").innerHTML = " "
