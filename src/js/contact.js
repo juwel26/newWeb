@@ -12,6 +12,8 @@ function SendMail(){
       //  document.getElementById("pp").innerHTML = " Your massage sent successfully Thank you."
       //  document.getElementById("pp").style.color = "green"
        document.querySelector(".sucss").style.display = " block"
+       document.querySelector(".bgblr").style.display = " block"
+
        document.getElementById("Name").value = " "
        document.getElementById("email_id").value = " "
        document.getElementById("message").value = " "
@@ -20,6 +22,7 @@ function SendMail(){
        setTimeout(() => {
         // document.getElementById("pp").innerHTML = " "
         document.querySelector(".sucss").style.display = " none"
+        document.querySelector(".bgblr").style.display = " none"
 
         
       }, 5000);
@@ -39,9 +42,10 @@ function SendMail(){
   }
 
 
- let cancel=  document.querySelector(".cancel")
+ let ok =  document.querySelector(".ok")
  let photo =  document.querySelector(".img")
 
- cancel.addEventListener("click",function(){
-  photo.classList.add("show")
+ ok.addEventListener("click",function(){
+  document.querySelector(".bgblr").style.display = " none"
+  document.querySelector(".sucss").style.display = " none"
  })
