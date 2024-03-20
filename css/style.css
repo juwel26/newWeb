@@ -1,11 +1,10 @@
-
-.roted:hover{
-   padding: -5px;
+.roted:hover {
+  padding: -5px;
 }
 
-.sucss{
-   display: none;
+.mainBox {
+  display: none;
 }
-.bgblr{
-   display: none;
-}
+/* .bgblr {
+  display: none;
+} */

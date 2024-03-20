@@ -9,10 +9,8 @@ function SendMail(){
   emailjs.send('service_9ygswwv', 'template_ayr4gdd', parms)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
-      //  document.getElementById("pp").innerHTML = " Your massage sent successfully Thank you."
-      //  document.getElementById("pp").style.color = "green"
-       document.querySelector(".sucss").style.display = " block"
-       document.querySelector(".bgblr").style.display = " block"
+       document.querySelector(".mainBox").style.display = " block"
+      //  document.querySelector(".bgblr").style.display = " block"
 
        document.getElementById("Name").value = " "
        document.getElementById("email_id").value = " "
@@ -21,7 +19,7 @@ function SendMail(){
   
        setTimeout(() => {
         // document.getElementById("pp").innerHTML = " "
-        document.querySelector(".sucss").style.display = " none"
+        document.querySelector(".mainBox").style.display = " none"
         document.querySelector(".bgblr").style.display = " none"
 
         
@@ -42,10 +40,9 @@ function SendMail(){
   }
 
 
- let ok =  document.querySelector(".ok")
+ let ok =  document.querySelector(".okay")
  let photo =  document.querySelector(".img")
 
  ok.addEventListener("click",function(){
-  document.querySelector(".bgblr").style.display = " none"
-  document.querySelector(".sucss").style.display = " none"
+  document.querySelector(".mainBox").style.display = " none"
  })

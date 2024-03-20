@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project</title>
+  </head>
+  <body class="min-screen w-full">
+
+    <!-- Navbar  -->
+    <nav class="bg-sky-100">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-1  flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button id="toggle" type="button"
+                class="relative mx-auto inline-flex items-center justify-between rounded-md p-2 text-sky-600  focus:outline-none focus:ring-1 focus:ring-inset focus:ring-sky-300"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="absolute text-center -inset-0.5 "></span>
+                <span class="sr-only">Open main menu</span>
+            
+                <svg id="threed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 block">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                </svg>
+    
+                <svg id="crose" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6 hidden">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+    
+              </button>
+            </div>
+            <div class="flex   justify-between sm:items-stretch sm:justify-start">
+              <div class=" flex flex-shrink-0 items-start  ">
+                <img class="h-12 w-auto" src="../img/logo.png" alt="Your Company">
+              </div>
+              <div class=" justify-end hidden sm:ml-6 sm:block">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="../index.html" class=" text-sky-500 hover:bg-sky-200 rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page">Home</a>
+                  <a href="../html/About.html" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">About</a>
+                  <a href="../html/About.html" class="text-sky-500 hover:bg-sky-200  rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+    
+            </div>
+          </div>
+        </div>
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-4 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="../index.html" class="text-sky-600 block hover:bg-sky-200 rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page">Home</a>
+            <!-- <a href="#" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Projects</a> -->
+            <a href="../html/About.html" class="text-sky-600 hover:bg-sky-200  block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- carosol  -->
+
+
+<div class="max-w-2xl mx-auto m-2">
+<img class="px-4" src="../img/coming soon.jpg" alt="">
+</div>
+
+
+
+
+    <!-- footer  -->
+    <footer class="bg-sky-100 text-center h-20 w-auto "> <br>
+        <span class=" mx-auto text-center text-justify items-center text-xl mt-10  text-sky-500 font-sans ">
+          &copy; 2021 -
+          <script>document.write(new Date().getFullYear())</script> Juwel Rana.
+        </span>
+      </footer>
+
+  </body>
+</html>
